@@ -30,7 +30,7 @@ console.log(fruits);
 fruits[3] = 'strawberry';
 console.log(fruits);
 
-// Using the length as the index will always add on the the end
+// Using the `length` property as the index will always add value to the end
 fruits[fruits.length] = 'blueberry';
 console.log(fruits);
 fruits[fruits.length] = 'peach';
