@@ -1,0 +1,136 @@
+- **Comments**
+  - Single Line Comments
+  - Multi-Line Comments
+- **Variables**
+  - `var` keyword
+  - `let` keyword
+  - `const` keyword
+  - Variable Naming Conventions
+  - Multi-Words Formatting
+  - Declare or Create a Variable
+  - Storing or Assigning or Initializing values to Variables
+  - Assigning the Value of One Variable to Another
+  - Initialize the Value in the Same Line as it is Declared
+  - Declare Variable of Every DataType
+  - Declare Multiple Variables at Once
+  - Case Sensitivity in Variables
+- **Print Following:**
+  - Not Defined
+  - Undefined
+  - NULL
+  - NaN
+  - Infinity, Zero, UndefinedString
+  - Types of Errors and Warnings in Console (Browser)
+- **Data Types**
+  - Primitive Data Types => String, Number, Boolean, Null, Undefined
+  - Reference Data Types => [], {}, ()
+  - Use of BigInt + Symbol
+  - Concept of Stack Vs. Heap
+- **Console**
+  - Log Every DataType
+  - Log Multiple Values
+  - Log Variables
+  - Log Arithmetic and Other Operations
+  - Log Variable with a String (Concatenation + Template Literals)
+  - Log Error
+  - Log Warning
+  - Log Array and Object
+  - Log Array and Object in Tabular Format
+  - Log with `group` method
+  - Log with `time` method
+  - Log with `clear` method
+  - Add CSS to Logs
+- **`typeof` Operator**
+- **Type Conversion**
+  - String to Number
+  - Number to String
+  - String to Decimal (Also try 100kl, kl100)
+  - Number to Boolean (Negative, Zero, Positive)
+- **Type Coercion**
+  - Coerced to String
+  - Coerced to Number
+  - Coerced to 0 (null, false, undefined)
+  - Coerced to 1 (true)
+- **Operators**
+  - Arithmetic Operators
+    - Addition
+    - Subtraction
+    - Multiplication
+    - Division
+    - Modulus
+    - Exponentiation
+  - Assignment Operators
+    - Simple Assignment
+    - Addition with Assignment
+    - Subtraction with Assignment
+    - Multiplication with Assignment
+    - Division with Assignment
+    - Modulus with Assignment
+    - Exponentiation with Assignment
+  - Comparison Operators
+    - Equal
+    - Identical
+    - Not Equal
+    - Not Identical
+    - Greater Than
+    - Less Than
+    - Greater Than or Equal To
+    - Less Than or Equal To
+    - Comparison Operators on String
+  - Increment and Decrement Operators
+    - Pre and Post Increment
+    - Pre and Post Decrement
+  - Logical Operators
+    - And `&&`
+    - Or `||`
+    - Not `!`
+  - String Operators
+    - Concatenation
+    - Concatenation with Assignment
+  - Ternary Operator `?:`
+- **String**
+  - String Object Type
+  - String Primitive Type
+  - String : `length` Property
+  - Access Value by Key/Index in String
+  - Show the Prototype of String Object
+  - Change Case of a String (upper, lower, etc.)
+  - String Methods (charAt, indexOf, substring, slice, trim, replace, includes, valueOf, split, etc.)
+  - Practice all String Properties and Methods
+- **Number**
+  - Number Object Type
+  - Number Primitive Type
+  - Number : `length` Property
+  - Number Methods (toString, toFixed, toPrecision, toExponential, valueOf, MAX_VALUE, MIN_VALUE)
+  - Practice all Number Properties and Methods
+- **Math**
+  - Math Methods (sqrt, abs, round, ceil, floor, pow, min, max, random)
+  - Get a random number between 1 and 100
+  - Practice all Math Properties and Methods
+- **Date**
+  - Print Today Date and Time
+  - Print Specific Date and Time (Comma Separated)
+  - Pass String to Date Object (2021-07-10T12:30:00, 07/10/2021 12:30:00, 2022-07-10, 07-10-2022)
+  - Get Current Timestamp
+  - Get the timestamp of a specific date
+  - Create a date from a timestamp
+  - Convert Milliseconds to Seconds
+  - Intl.DateTimeFormat API (locale specific)
+  - Date Methods (toString, now, valueOf, getTime, getFullYear, getMonth, getDate, getDay, getHours, getMinutes, getSeconds, getMilliseconds, )
+  - Practice all Date Properties and Methods
+- **Arrays**
+  - Array Literal
+  - Array Constructor
+  - Get value by index
+  - Change value by index
+  - Array `length` property
+  - Array `length` property is not read only
+  - Using the `length` property as the index will always add value to the end
+  - Array Methods (push, pop, shift, unshift, reverse, includes, indexOf, toString, slice, splice, flat, isArray, from, of, etc.)
+  - Practice all Array Methods and Properties
+  - Array Chaining Methods
+  - Nest one Array to Another using push() method and Access the nested array values
+  - Nest two Arrays by creating a new variable
+  - Nest with concat() method
+  - Nest with Spread Operator
+  - Master filter, map, and reduce
