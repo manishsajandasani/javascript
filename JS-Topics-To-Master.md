@@ -134,3 +134,83 @@
   - Nest with concat() method
   - Nest with Spread Operator
   - Master filter, map, and reduce
+- **Objects**
+  - Object Literals
+  - Accessing object properties with Dot and Bracket Notation
+  - Updating Object Properties
+  - Deleting Object Properties
+  - Creating Object Properties
+  - Add Functions to Objects
+  - How to use keys of multiple words in an Object
+  - Create object using the object constructor
+  - Object Nesting
+  - Merge Two Objects in Third with Spread Operator
+  - What is Object.assign
+  - Array of Objects and Access their Values
+  - Get array of object keys
+  - Get length of an object
+  - Get array of object values
+  - Get array of object key/value pairs
+  - Check if object has a property
+  - Setting object properties with the same name as a variable
+- **Destructuring**
+  - Destructuring object properties and also rename them
+  - Destructuring object properties to multiple levels
+  - Destructuring arrays & using the rest/spread operator
+- **JSON**
+  - Convert an Object to JSON and access with Dot and Bracket Notation 
+  - Convert JSON to Object
+  - Convert Array of Objects to JSON and Vice Versa
+- **Logic Control Flow**
+  - if_else
+    - Syntax with truthy and falsy values
+    - Evaluate Expressions as Conditions
+    - Block Scope Nature
+    - Shorthand if/else
+  - if_elseif_else
+  - Nested if_else
+  - Falsy and Truthy Values
+  - Falsy and Truthy Caveats 
+    - Checking for literal 0
+    - Checking for empty arrays
+    - Checking for empty objects
+    - Loose and Strict Equality (== vs. ===) [false vs. 0, '' vs. 0, null vs. undefined]
+  - Switch Statement
+    - Immediate value evaluation
+    - Range Evaluation
+    - Multiple Conditions at Same Line
+  - Tricky Logical Operators
+    - `&&` - Will return first falsy value or the last value
+    - `||` - Will return the first truthy value or the last value
+    - `??` - Returns the right side operand when the left is null or undefined
+  - Tricky Logical Assignments
+    - `||=` assigns the right side value only if the left is a falsy value
+    - `&&=` assigns the right side value only if the left is a truthy value
+    - `??=` assigns the right side value only if the left is null or undefined
+  - Ternary Operator
+    - Alternative of `if` statement
+    - Assigning a conditional value to a variable
+    - Shorter Ternary Version of Multiple Statements
+    - Ternary with no else
+    - Shorthand for ternary with no else
+- **Loops and Iteration** 
+  - loops with `break` and `continue` keywords
+  - while, do-while, for loop
+    - Basic Usage
+    - Nested Looping
+    - Loop through an array
+  - for_of loop
+    - Loop through arrays
+    - Loop through array of objects
+    - Loop over strings
+    - Loop over Maps
+  - for_in loop
+    - Loop through objects
+    - Loop through arrays
+  - forEach method
+    - Loop through an array with long form
+    - Loop through an array with short form
+    - Pass in the index and original array
+    - Use a named function
+    - Loop through Array of objects
+  - Compare all Loops and their Performance. When to use Which one.
