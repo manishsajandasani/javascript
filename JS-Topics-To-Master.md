@@ -158,7 +158,7 @@
   - Destructuring object properties to multiple levels
   - Destructuring arrays & using the rest/spread operator
 - **JSON**
-  - Convert an Object to JSON and access with Dot and Bracket Notation 
+  - Convert an Object to JSON and access with Dot and Bracket Notation
   - Convert JSON to Object
   - Convert Array of Objects to JSON and Vice Versa
 - **Logic Control Flow**
@@ -170,7 +170,7 @@
   - if_elseif_else
   - Nested if_else
   - Falsy and Truthy Values
-  - Falsy and Truthy Caveats 
+  - Falsy and Truthy Caveats
     - Checking for literal 0
     - Checking for empty arrays
     - Checking for empty objects
@@ -193,7 +193,7 @@
     - Shorter Ternary Version of Multiple Statements
     - Ternary with no else
     - Shorthand for ternary with no else
-- **Loops and Iteration** 
+- **Loops and Iteration**
   - loops with `break` and `continue` keywords
   - while, do-while, for loop
     - Basic Usage
@@ -214,3 +214,35 @@
     - Use a named function
     - Loop through Array of objects
   - Compare all Loops and their Performance. When to use Which one.
+- **Functions**
+  - Define a basic function
+  - Invoke, execute or call a function
+  - Define a function with parameters
+  - Invoke function with arguments
+  - Returning a value from a function
+  - Assign the returned value to a variable
+  - Old way of doing - Default Params
+  - New way of doing - Default Params
+  - Rest Operator Params
+  - Objects as params
+  - Arrays as params
+  - Access Global variable in functions
+  - Access global variable in Blocks
+  - Overriding global variable in functions (Variable Shadowing)
+  - Access a function scoped variable in global scope
+  - Prove: If statement is a block
+  - Prove: Loop is a block
+  - Try to access var, let, and const variables of a block outside of it
+  - Prove: var is function scoped
+  - Prove: Nested Scope with a function and if statement
+  - Function Declaration vs. Function Expression
+  - Arrow Function Syntax
+  - Implicit Return with Arrow Function
+  - Can we leave off () with a single param? Give Example.
+  - Return an object by an arrow function
+  - Use normal and arrow function both to loop through an array with forEach method as a callback
+  - IIFE Syntax
+  - IIFE with Params
+  - Named IIFE
+  - Execution Context
+  - Call Stack
