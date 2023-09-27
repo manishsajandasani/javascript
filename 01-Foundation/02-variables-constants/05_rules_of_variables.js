@@ -1,6 +1,6 @@
 /**
  * Naming Conventions
- * Only letters, numbers, underscores and dollar signs are allowed
+ * Only letters, numbers, underscores (_) and dollar ($) signs are allowed
  * Can't start with a number
  */
 
@@ -9,14 +9,15 @@
  * firstName = camelCase (preferable)
  * first_name = underscore
  * FirstName = PascalCase
- * firstname = lowercase
+ * firstname = lowercase (worst)
  */
 
 // Declare or Create Variables
-var fname;
+var fname2;
+let fname3;
 
 // Storing or Assigning or Initializing values to Variables
-fname = "Manish";
+fname1 = "Manish";
 var lname = "Sajandasani";
 
 // Assigning the Value of One Variable to Another
@@ -33,14 +34,19 @@ var stringVar;
 var stringVar_2 = "Any String Value";
 
 // Declare Bool Variable
-var boolVar = true;
+var boolVar = false;
 
 // Declare Multiple Values at once
-var a1, b1, c1;
-let a2, b2, c2;
+var a1, b1, c1 = 30;
+console.log(a1, b1, c1);
+let a2, b2 = 50, c2;
+console.log(a2, b2, c2);
 const a3 = 10, b3 = 20, c3 = 30;
+console.log(a3, b3, c3);
 
 // Case Sensitivity in Variables (Prefer camelCase)
 var theName = "Manish";
 var TheName = "Sanjay";
 var THENAME = "Mohini";
+console.log(theName, TheName, THENAME);
+

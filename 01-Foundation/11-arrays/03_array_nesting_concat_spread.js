@@ -18,7 +18,7 @@ x = allFruits[1][2];
 console.log(x);
 
 console.log("======== concat() - Concatenate arrays ========");
-x = fruits.concat(berries);
+x = ['1','2','3'].concat(['4','5','6']);
 console.log(x);
 
 console.log("======== spread operator (...) - Concatenate with ========");
@@ -38,6 +38,8 @@ console.log(x);
 
 console.log("======== from() - Create an array from an array like value ========");
 x = Array.from('1234ABCD');
+console.log(x);
+x = Array.from('Manish');
 console.log(x);
 
 console.log("======== of() - Create an array from a set of values ========");

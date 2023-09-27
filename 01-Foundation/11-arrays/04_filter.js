@@ -5,7 +5,7 @@ const evenNumbers = numbers.filter(function (number) {
 console.log(evenNumbers);
 
 // Short version
-const evenNumbers2 = numbers.filter((number) => number % 2 === 0);
+const evenNumbers2 = numbers.filter(number => number % 2 === 0);
 console.log(evenNumbers2);
 
 // Same with forEach
