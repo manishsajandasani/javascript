@@ -31,3 +31,30 @@ for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
   }
 }
+
+/**
+ * For Loop Exercises
+ * 1. Write a program to display the first 10 natural numbers.
+      Expected Output : 1 2 3 4 5 6 7 8 9 10
+ * 2. Write a program to compute the sum of the first 10 natural numbers.
+      Expected Output : 1 2 3 4 5 6 7 8 9 10 => The sum is 55
+ * 3. Write a program to display n terms of natural numbers and their sum.
+      The first 7 natural numbers are : 1 2 3 4 5 6 7
+      The Sum of Natural Number upto 7 terms : 28
+ * 4. Write a program to display the cube of the number up to an integer.
+      Input number of terms : 5
+      Expected Output :
+      Number is : 1 and cube of the 1 is :1
+      Number is : 2 and cube of the 2 is :8
+      Number is : 3 and cube of the 3 is :27
+      Number is : 4 and cube of the 4 is :64
+      Number is : 5 and cube of the 5 is :125
+ * 5. Write a program to display the multiplication table for a given integer.
+      Test Data :
+      Input the number (Table to be calculated) : 15
+      Expected Output :
+      15 X 1 = 15
+      ...
+      ...
+      15 X 10 = 150
+ */
