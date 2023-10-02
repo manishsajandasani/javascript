@@ -26,3 +26,12 @@ const cart = [
 ];
 const cartPriceTotal = cart.reduce((acc, cur) => acc + cur.price, 0);
 console.log(cartPriceTotal);
+
+const cart2 = [
+  {id: 1, item: 'iPhone', pricing: {price: 1000}},
+  {id: 1, item: 'iPhone', pricing: {price: 1200}},
+  {id: 1, item: 'iPhone', pricing: {price: 1400}}
+]
+
+const arrFunc = cart2.reduce((total, num) => total + num.pricing.price, 0);
+console.log(arrFunc);

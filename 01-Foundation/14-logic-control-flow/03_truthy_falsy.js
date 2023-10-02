@@ -16,6 +16,14 @@
 // - {} (empty object)
 // - function () {} (empty function)
 
+if ("") {
+    console.log("Spacing");
+}
+
+if (" ") {
+    console.log("Spacing");
+}
+
 const x = function () { };
 if (x) {
     console.log('This is truthy');

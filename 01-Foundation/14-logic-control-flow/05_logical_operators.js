@@ -37,3 +37,7 @@ c = 'Hello' ?? 30;
 console.log(c);
 c = '' ?? 30;
 console.log(c);
+c = NaN ?? 40;
+console.log(c);
+c = z ?? 40;
+console.log(c);

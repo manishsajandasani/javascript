@@ -1,3 +1,9 @@
+if ("") {
+  console.log("Spacing");
+} else {
+  console.log("No Spacing");
+}
+
 console.log("======== && operator ========");
 $x = 10;
 $y = "20";

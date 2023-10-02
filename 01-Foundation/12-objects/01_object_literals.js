@@ -5,6 +5,7 @@ const person = {
   name: 'John Doe',
   age: 30,
   isAdmin: true,
+  isFaculty: false,
   address: {
     street: '123 Main st',
     city: 'Boston',
@@ -37,17 +38,19 @@ console.log("======== Create new properties ========");
 person.hasChildren = true;
 console.log(person);
 
-console.log("======== Add functions ========");
-person.greet = function () {
-  console.log(`Hello, my name is ${this.name}`);
+console.log("======== Add Methods ========");
+person.greet = function () { 
+  return `Hello, my name is ${this.name}`;
 };
 console.log(person);
-person.greet();
+console.log(person.greet());
 
 console.log("======== Keys with multiple words ========");
 const person2 = {
-  'first name': 'Manish',
+  first_name: 'Manish',
   'last name': 'Sajandasani',
 };
-x = person2['first name'];
+x = person2.first_name;
+console.log(x);
+x = person2['last name'];
 console.log(x);

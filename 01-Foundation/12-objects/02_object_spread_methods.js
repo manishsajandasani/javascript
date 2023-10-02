@@ -44,6 +44,10 @@ console.log(x);
 console.log("======== Get array of object keys ========");
 x = Object.keys(todo);
 console.log(x);
+x = Object.keys(todos);
+console.log(x);
+x = Object.keys(todos[0]);
+console.log(x);
 
 console.log("======== Get length of an object ========");
 x = Object.keys(todo).length;

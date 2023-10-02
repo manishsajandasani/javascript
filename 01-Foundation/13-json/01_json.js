@@ -5,6 +5,7 @@ const post = {
 };
 
 console.log("======== Convert to JSON string ========");
+console.log(post);
 const str = JSON.stringify(post);
 console.log(str);
 console.log(str.id);

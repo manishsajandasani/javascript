@@ -2,6 +2,7 @@ console.log("======== Setting object properties with the same name as a variable
 const firstName = 'John';
 const lastName = 'Doe';
 const age = 30;
+
 const person = {
   firstName,
   lastName,
@@ -22,7 +23,9 @@ const {
   title,
   user: { name }, // destructuring multiple levels
 } = todo;
-console.log(todoId);
+console.log(todo.id, todoId);
+console.log(todo.title, title);
+console.log(todo.user.name, name);
 
 console.log("======== Destructuring arrays & using the rest/spread operator ========");
 const numbers = [23, 67, 33, 49, 52];

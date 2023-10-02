@@ -34,3 +34,13 @@ if (x >= y)
     console.log(`${x} is greater than or equal to ${y}`),
         console.log('This is true');
 else console.log('This is false');
+
+let abcd = "Manish";
+if (true) {
+    abcd = "Sanjay";
+    console.log(abcd);
+
+    let abcd2 = "Honey";
+}
+console.log(abcd);
+console.log(abcd2);
