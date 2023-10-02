@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="">
+    <input type="text" id="a1" class="in">
+    <input type="text" id="a2" class="in">
+    <input type="text" id="a3" class="in">
+    <input type="text" id="a4" class="in">
+    <input type="text" id="a5" class="in">
+
+    <button id="btn" type="button">
+      Get Sum
+    </button>
+  </form>
+
+  <script>
+    let button = document.getElementById("btn");
+    button.addEventListener('click', function() {
+      let inputArr = [];
+      let sum = 0;
+      let allInputs = document.querySelectorAll(".in");
+      allInputs = Array.from(allInputs);
+
+      for(let i = 0; i < allInputs.length; i++) {
+        let curVal = Number(allInputs[i].value);
+        inputArr.push(curVal);
+        // sum += curVal;
+      }
+
+      // console.log(inputArr);
+      // console.log(sum);
+
+      for(let i = 0; i < inputArr.length; i++) {
+        sum += inputArr[i];
+      }
+
+      console.log(`Sum = ${sum}`);
+    })
+  </script>
+</body>
+</html>
