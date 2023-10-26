@@ -3,7 +3,8 @@
 // console.log(innerWidth);
 
 // Global scope variable
-const x = 50;
+// const x = 50;
+let x = 50;
 console.log(x, 'in global');
 function run() {
     // Access global vars in functions
@@ -19,11 +20,13 @@ if (true) {
 
 function add() {
     // Overwriting global x (variable shadowing)
-    const x = 1;
+    // const x = 1;
+    x = 10;
     const y = 50;
     console.log(x + y);
 }
 add();
+console.log(x);
 
 // Can not access a function scoped variable in global scope
 // 0030_fnc_global_scope.js:28 Uncaught ReferenceError: y is not defined

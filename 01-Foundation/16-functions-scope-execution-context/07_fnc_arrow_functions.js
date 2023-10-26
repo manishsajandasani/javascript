@@ -31,4 +31,4 @@ numbers.forEach(function (n) {
 
 // Arrow function in a callback
 const numbers2 = [10, 20, 30, 40, 50];
-numbers2.forEach((n) => console.log(n));
+numbers2.forEach(n => console.log(n));

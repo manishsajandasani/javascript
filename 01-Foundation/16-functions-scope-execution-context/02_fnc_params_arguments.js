@@ -6,17 +6,18 @@ function registerUser(user = 'Bot') {
     // }
     return user + ' is registered';
 }
-console.log(registerUser());
+console.log(registerUser('Naina'));
 
 // Rest Params
 function sum(...numbers) {
+    console.log(numbers);
     let total = 0;
     for (const num of numbers) {
         total += num;
     }
-    return total;
+    console.log(total);
 }
-console.log(sum(1, 2, 3, 4, 5, 6, 100));
+sum(1, 2, 3, 4, 5, 6, 200);
 
 // Objects as params
 function loginUser(user) {

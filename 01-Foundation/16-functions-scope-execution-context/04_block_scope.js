@@ -2,6 +2,8 @@ const x = 100;
 // An If statement is a block
 if (true) {
     console.log(x);
+    // var y = 200;
+    // let y = 200;
     const y = 200;
     console.log(x + y);
 }

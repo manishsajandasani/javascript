@@ -6,6 +6,7 @@ console.log(listItems);
 
 console.log("%c==== Convert NodeList into Array ====", style);
 console.log(Array.from(listItems));
+listItems.forEach(li => console.log(li));
 
 console.log("%c==== Access elements by index ====", style);
 console.log(listItems[1].innerText);
@@ -44,3 +45,6 @@ console.log("%c==== getElementsByTagName() ====", style);
 const listItems3 = document.getElementsByTagName('li');
 console.log(listItems3);
 console.log(listItems3[0].innerText);
+Array.from(listItems3).forEach((item) => {
+  console.log(item.innerText);
+});

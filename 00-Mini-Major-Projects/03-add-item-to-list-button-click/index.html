@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul .item {
+      border: 1px solid skyblue;
+      border-radius: 5px;
+      padding: 10px;
+      width: 200px;
+      position: relative;
+    }
+
+    ul .item .btn {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translate(0, -50%);
+      background: #fecfcf;
+      border: unset;
+      outline: unset;
+      cursor: pointer;
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+    }
+
+    ul .item .btn .icon {
+      color: red;
+    }
+
+    ul .item + .item {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div style="text-align: center;">
+        <button id="addFruitBtn">Add Fruit</button>
+      </div>
+      <ul id="list"></ul>
+    </div>
+
+    <script>
+      let list = document.querySelector('#list')
+      let addFruitBtn = document.querySelector('#addFruitBtn')
+      var count = 1
+      let fruits = [
+        {id: 1, name: 'Mango'},
+        {id: 2, name: 'Apple'},
+        {id: 3, name: 'Strawberry'},
+        {id: 4, name: 'Pineapple'},
+        {id: 5, name: 'Blueberry'},
+        {id: 6, name: 'Banana'},
+      ]
+      addFruitBtn.addEventListener('click', () => {
+        let item = fruits.filter((fruit) => {
+          return fruit.id == count
+        })
+        createNewItem(item[0].name)
+        count++
+        (count > fruits.length) ? addFruitBtn.disabled = true : false 
+      })
+
+      function createNewItem(itemName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(itemName))
+        li.classList.add('item')
+        const button = createButton('btn')  
+        li.appendChild(button)
+        list.appendChild(li)
+
+        let delButtons = Array.from(document.querySelectorAll('.fa-trash'))
+        console.log(delButtons);
+        delButtons.forEach(btn => {
+          btn.addEventListener('click', function (e) {
+            e.target.parentElement.parentElement.remove()
+          })
+        })
+      }
+
+      function createButton(classes) {
+        const button = document.createElement('button')
+        button.className = classes
+        const icon = createIcon('icon fas fa-trash')  
+        button.appendChild(icon)
+        return button
+      }
+      
+      function createIcon(classes) {
+        const icon = document.createElement('i')
+        icon.className = classes
+        icon.id = count
+        return icon
+      }
+    </script>
+</body>
+</html>

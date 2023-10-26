@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .link {font-weight: bold; cursor: pointer;}
+    .link1 {color: blue;}
+    .link2 {color: red;}
+    .link3 {color: green;}
+    .link4 {color: brown;}
+  </style>
+</head>
+<body>
+  <p id="link1" class="link">Link 1</p>
+  <p id="link2" class="link">Link 2</p>
+  <p id="link3" class="link">Link 3</p>
+  <p id="link4" class="link">Link 4</p>
+</body>
+
+<script>
+  let links = Array.from(document.querySelectorAll('.link'));
+  
+  links.forEach(link => {
+    link.addEventListener('click', function() {
+      // let linkId = link.id;
+      link.classList.add(link.id);
+    });
+  })
+
+  let valuesArr2 = [];
+  for (let i = 0; i < links.length; i++) {
+    valuesArr2.push(links[i].textContent);
+  }
+  console.log(valuesArr2);
+  
+  let valuesArr = [];
+  links.forEach(link => {
+    valuesArr.push(link.textContent);
+  })
+  console.log(valuesArr);
+
+  let allValues = links.map(link => {
+    return link.textContent;
+  })
+  console.log(allValues);
+</script>
+</html>

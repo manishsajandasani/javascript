@@ -13,6 +13,7 @@ first();
 if (true) {
     const x = 150;
     if (x === 150) {
+        // var y = 200;
         const y = 200;
         console.log(x + y);
     }

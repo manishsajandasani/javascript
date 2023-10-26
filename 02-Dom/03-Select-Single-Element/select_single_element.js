@@ -7,7 +7,7 @@ console.log("%c==== Get attributes ====", style);
 console.log(document.getElementById('app-title').id);
 console.log(document.getElementById('app-title').className);
 console.log(Array.from(document.getElementById('app-title').classList));
-console.log(document.getElementById('app-title').getAttribute('id'));
+console.log(document.getElementById('app-title').getAttribute('data-src'));
 
 console.log("%c==== Set attributes ====", style);
 document.getElementById('app-title').title = 'Shopping List';
@@ -19,7 +19,7 @@ console.log("%c==== Get/change content ====", style);
 console.log(title.textContent);
 title.textContent = 'Hello World';
 title.innerText = 'Hello Again';
-title.innerHTML = '<strong>Shopping List</strong>';
+title.innerHTML = '<strong>Har har Mahadev</strong>';
 
 console.log("%c==== Change styles ====", style);
 title.style.color = 'red';
@@ -37,7 +37,7 @@ console.log(document.querySelector('li:nth-child(2)').innerText);
 
 const secondItem = document.querySelector('li:nth-child(2)');
 secondItem.innerText = 'Apple Juice';
-secondItem.style.color = 'red';
+secondItem.style.color = 'orange';
 console.log(secondItem);
 
 console.log("%c==== Use these methods on other elements ====", style);
