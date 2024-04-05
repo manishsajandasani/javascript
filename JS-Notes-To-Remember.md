@@ -1,0 +1,3 @@
+- The square root of true is 1
+- The square root of false is 0
+- The square root of a negative number, string, object, and array is NaN
