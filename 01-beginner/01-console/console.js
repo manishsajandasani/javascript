@@ -1,35 +1,69 @@
-console.log('This is a console program');
-console.log(45);
-console.log(45.67);
-console.log(true);
-console.log(-1);
-console.log('32' == 32);
-console.log('32' === 32);
+// log string
+console.log('This is a console program')
 
-console.error('This is an error');
+// log numbers (decimals and integers)
+console.log(45)
+console.log(45.67)
+console.log(-1)
 
-console.warn('This is a warning');
+// log boolean
+console.log(true)
 
-const age = 32;
-console.log(`Log a variable: ${age}`);
+// log condition (loose equality)
+console.log('32' == 32)
 
-const sections = ['A', 'B', 'C', 'D'];
-console.log(`Log an array: ${sections}`);
+// log condition (strict equality)
+console.log('32' === 32)
 
-const person = { firstName: 'John', lastName: 'Doe' };
-console.log(person);
-console.table(person);
-console.log(`Log a plain object: ${person}`);
-console.log(`Log an object: ${JSON.stringify(person)}`);
+// log error
+console.error('This is an error')
 
+// log warning
+console.warn('This is a warning')
+
+const age = 32
+console.log(age)
+
+// log array
+const sections = ['A', 'B', 'C', 'D']
+console.log(sections)
+
+// log object
+const person = { firstName: 'John', lastName: 'Doe' }
+console.log(person)
+console.log(`Log a plain object: ${person}`) // [object object]
+console.log(`Log an object with template string: ${JSON.stringify(person)}`)
+
+// log object in tabular format
+const student = { firstName: 'John', class: '5th' }
+console.table(student)
+
+// log array of objects
 const students = [
   { firstName: 'Manish', lastName: 'Sajandasani' },
   { firstName: 'Kailash', lastName: 'Chhatani' }
-];
-console.log(students);
-console.table(students);
-console.log(`Log array of objects: ${students}`);
-console.log(`Log array of objects: ${JSON.stringify(students)}`);
+]
+console.log(students)
+console.table(students)
+console.log(`Log array of objects: ${students}`) // [object object], [object object]
+console.log(`Log array of objects: ${JSON.stringify(students)}`)
 
-const styles = 'color: red; font-weight: bold; font-size: 22px;';
-console.log('%cI am a long life learner', styles);
+// styled logs
+const styles = 'color: red font-weight: bold font-size: 22px'
+console.log('%cI am a long life learner', styles)
+
+// group logs
+console.group('logGroup')
+console.log('Manish');
+console.log(32);
+console.log(`isMarried: ${true}`);
+console.groupEnd('logGroup')
+
+// calculate time logs
+console.time('startTime')
+let sum = 0;
+for (let i = 1; i <= 1000000; i++) {
+  sum += i;
+}
+console.log(`Total is ${sum}`);
+console.timeEnd('startTime')

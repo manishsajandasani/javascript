@@ -1,20 +1,18 @@
-const styles = 'color: red; font-weight: bold: font-size: 18px;'
-
 // Array
 const numbersArray = [1, 2, 3, 4, 5];
-console.log('%cNumbers Array', styles)
 console.log(numbersArray);
 console.log(`Type of numbersArray is <${typeof numbersArray}>`);
+console.log(Array.isArray(numbersArray));
 
 const stringArray = ['A', 'B', 'C', 'D', 'E'];
-console.log('%cString Array', styles)
 console.log(stringArray);
 console.log(`Type of stringArray is <${typeof stringArray}>`);
+console.log(Array.isArray(stringArray));
 
 const mixedValuesArray = [1, 'Hello', true, null, undefined, { firstName: 'Manish', age: 32 }, [2025, 'Full Stack Development Course']];
-console.log('%cMixed Values Array', styles)
 console.log(mixedValuesArray);
 console.log(`Type of mixedValuesArray is <${typeof mixedValuesArray}>`);
+console.log(Array.isArray(mixedValuesArray));
 
 // Object
 const studentObject = {
@@ -24,7 +22,6 @@ const studentObject = {
   hobbies: ['Cricket', 'Chess', 'Reading'],
   favouriteSubject: 'Maths'
 };
-console.log('%cStudent Object', styles)
 console.log(studentObject);
 console.log(`Type of studentObject is <${typeof studentObject}>`);
 
@@ -32,9 +29,11 @@ console.log(`Type of studentObject is <${typeof studentObject}>`);
 function printNamaste() {
   console.log('Namaste!!');
 }
-console.log('%cprintNamaste Function', styles)
 console.log(printNamaste);
-console.log(`Type of printNamaste is not <${typeof printNamaste}> but <object>`);
+console.log(`Type of printNamaste is <${typeof printNamaste}>`); // function
+console.log(typeof printNamaste === 'function')
+console.log(typeof printNamaste.call === 'function')
+console.log(typeof printNamaste === 'object')
 
 /**
  * NOTE:
