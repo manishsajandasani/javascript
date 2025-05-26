@@ -58,7 +58,7 @@ console.log(y);
 // const z; // Uncaught SyntaxError: Missing initializer in const declaration
 
 // Here we declared and initialized the const variable
-const z = 10
+const z = 10;
 console.log(z);
 
 // const variables cannot be reassigned

@@ -3,14 +3,14 @@
  * Standard for variable names, function names, and property names.
  */
 const camelCaseVariable = 10;
-console.log(`camelCaseVariable = ${camelCaseVariable}`)
+console.log(`camelCaseVariable = ${camelCaseVariable}`);
 
 /**
  * PascalCase: The first letter of every word is capitalized, including the very first word. Ex: UserName, ProductDetails, MyComponent
  * Standard for class names, constructor functions, and React component names.
  */
 const PascalCaseVariable = 20;
-console.log(`PascalCaseVariable = ${PascalCaseVariable}`)
+console.log(`PascalCaseVariable = ${PascalCaseVariable}`);
 
 /**
  * snake_case: All letters are lowercase, and words are separated by underscores (_). Ex: user_id, total_price, is_admin
@@ -18,7 +18,7 @@ console.log(`PascalCaseVariable = ${PascalCaseVariable}`)
  *  While valid, it's generally avoided for standard JS variables to maintain consistency with the community's camelCase preference.
  */
 const snake_case_variable = 30;
-console.log(`snake_case_variable = ${snake_case_variable}`)
+console.log(`snake_case_variable = ${snake_case_variable}`);
 
 /**
  * SCREAMING_SNAKE_CASE (UPPER_SNAKE_CASE): All letters are uppercase, and words are separated by underscores (_). Ex: MAX_USERS, PI_VALUE, API_KEY

@@ -31,8 +31,8 @@ function printNamaste() {
 }
 console.log(printNamaste);
 console.log(`Type of printNamaste is <${typeof printNamaste}>`); // function
-console.log(typeof printNamaste === 'function')
-console.log(typeof printNamaste.call === 'function')
+console.log(typeof printNamaste === 'function');
+console.log(typeof printNamaste.call === 'function');
 console.log(typeof printNamaste === 'object')
 
 /**
