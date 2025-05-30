@@ -1,3 +1,27 @@
+/**
+    Whether the JavaScript Date object is always one day off. The short answer is: No, it’s not always one day off, but it can sometimes seem that way due to time zone differences.
+
+    Why It Happens
+    JavaScript Date objects use the local time zone of the browser by default (or UTC if specified). So if you create a date without a time:    
+    const date = new Date('2025-05-30');
+    
+    JavaScript will interpret this as midnight in UTC, and then convert it to your local time. If your local time is behind UTC (like in the US), the local date might be the previous day. That’s why it looks like it’s one day off.
+
+    const date = new Date('2025-05-30'); 
+    console.log(date.toISOString()); // 2025-05-30T00:00:00.000Z
+    console.log(date.toString());    // Thu May 29 2025 20:00:00 GMT-0400 (Eastern Daylight Time)
+    So in local time (Eastern), it’s actually May 29, not May 30.
+
+    How to Avoid This
+    ✅ Always be clear about time zones.
+    ✅ Use Date.UTC if you’re dealing with UTC dates.
+    ✅ Use libraries like Luxon or date-fns for better time zone handling.
+
+    TL;DR:
+    JavaScript’s Date isn’t always one day off—it’s just that time zone conversions can make it seem like that.
+ */
+
+
 // 1. Create a new Date object (Current Date & Time)
 const now = new Date();
 console.log('Current Date & Time:', now);
@@ -30,6 +54,8 @@ console.log('Day (0-6):', now.getDay()); // 0 = Sunday, 6 = Saturday
 console.log('Hours:', now.getHours());
 console.log('Minutes:', now.getMinutes());
 console.log('Seconds:', now.getSeconds());
+console.log('Milliseconds:', now.getMilliseconds());
+console.log(`${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`);
 
 // 8. Set components
 now.setFullYear(2030);
@@ -72,3 +98,59 @@ console.log('UTC Hour:', now.getUTCHours());
 
 // 15. Get timezone offset (in minutes)
 console.log('Timezone Offset (minutes from UTC):', now.getTimezoneOffset());
+
+// 16. One Day Off
+const date = new Date('2025-05-30T00:00:00Z'); // Create a Date object in explicit UTC
+console.log("UTC time:", date.toUTCString()); // Show date in UTC
+console.log("Local time:", date.toString()); // Show date in local time (local timezone)
+
+// 17. To show in a different timezone, use toLocaleString with timeZone option:
+const options = {
+    timeZone: 'America/New_York', // Eastern Time
+    timeZoneName: 'short',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+};
+
+const nyTime = date.toLocaleString('en-US', options);
+console.log("New York time:", nyTime);
+
+const indiaTime = date.toLocaleString('en-IN', {
+    ...options,
+    timeZone: 'Asia/Kolkata',
+});
+console.log("India time:", indiaTime);
+
+// 18. Intl.DateTimeFormat API (Locale Specific)
+const d = new Date();
+console.log('America Date Format:', Intl.DateTimeFormat('en-US').format(d)); // This formats the date d in the US English locale style.
+console.log('England Date Format:', Intl.DateTimeFormat('en-GB').format(d)); // This does it for British English style (day/month/year instead of month/day/year).
+console.log('Default Format:', Intl.DateTimeFormat('default').format(d)); // This uses the default locale of the browser (whatever language the browser is set to).
+console.log('Long Month Format:', Intl.DateTimeFormat('default', { month: 'long' }).format(d)); // This gets the month name in full (e.g., "May" or "December") in the default locale.
+console.log('Short Month Format:', d.toLocaleString('default', { month: 'short' })); // This shows the short form of the month (like "May" instead of "May 2025").
+
+console.log(d.toLocaleString('default', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    timeZone: 'America/New_York',
+}));
+
+console.log(d.toLocaleString('default', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    timeZone: 'Asia/Kolkata',
+}));
