@@ -1,12 +1,13 @@
 /**
  * Falsy Values
- * There are exactly 7 falsy values in JavaScript. All other values are considered truthy.
+ * These are falsy values in JavaScript. All other values are considered truthy.
  * false (Boolean False), 0 (Number Zero), -0 (Negative Zero), 0n (BigInt Zero), "" (empty string), undefined, null, NaN (Not-a-Number)
  */
 console.log(Boolean(false));              // false
 console.log(Boolean(0));                  // false
 console.log(Boolean(-0));                 // false
 console.log(Boolean(0n));                 // false
+console.log(Boolean(""));                 // false
 console.log(Boolean(undefined));          // false
 console.log(Boolean(null));               // false
 console.log(Boolean(NaN));                // false
@@ -55,5 +56,11 @@ if (name) {
 
 const user = {};
 if (user) {
-  console.log("User exists"); // ← This runs
+  console.log("User exists"); // ← This runs but somewhat incorrect
+}
+
+if (user && Object.keys(user).length > 0) {
+  console.log("User exists and has data");
+} else {
+  console.log("User does not exist or has no data");
 }
