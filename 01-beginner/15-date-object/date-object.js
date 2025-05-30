@@ -37,38 +37,38 @@ now.setMonth(0); // January
 now.setDate(1);
 console.log('Modified Date:', now);
 
-// // 9. Convert to readable string
-// console.log('toString():', now.toString()); // Full string with timezone
-// console.log('toDateString():', now.toDateString()); // Only date
-// console.log('toTimeString():', now.toTimeString()); // Only time
-// console.log('toISOString():', now.toISOString()); // Standard ISO format
-// console.log('toLocaleString():', now.toLocaleString()); // Local format
-// console.log('toLocaleDateString():', now.toLocaleDateString()); // Local date only
-// console.log('toLocaleTimeString():', now.toLocaleTimeString()); // Local time only
+// 9. Convert to readable string
+console.log('toString():', now.toString()); // Full string with timezone
+console.log('toDateString():', now.toDateString()); // Only date
+console.log('toTimeString():', now.toTimeString()); // Only time
+console.log('toISOString():', now.toISOString()); // Standard ISO format
+console.log('toLocaleString():', now.toLocaleString()); // Local format
+console.log('toLocaleDateString():', now.toLocaleDateString()); // Local date only
+console.log('toLocaleTimeString():', now.toLocaleTimeString()); // Local time only
 
-// // 10. Parse date string into timestamp
-// const parsedTime = Date.parse("2025-12-31T23:59:59");
-// console.log('Parsed Timestamp:', parsedTime);
-// console.log('Parsed Date:', new Date(parsedTime));
+// 10. Parse date string into timestamp
+const parsedTime = Date.parse("2025-12-31T23:59:59");
+console.log('Parsed Timestamp:', parsedTime);
+console.log('Parsed Date:', new Date(parsedTime));
 
-// // 11. Compare two dates
-// const date1 = new Date("2024-01-01");
-// const date2 = new Date("2025-01-01");
-// console.log('Is date2 > date1?', date2 > date1); // true
+// 11. Compare two dates
+const date1 = new Date("2024-01-01");
+const date2 = new Date("2025-01-01");
+console.log('Is date2 > date1?', date2 > date1); // true
 
-// // 12. Date difference (in days)
-// const diffInMs = date2.getTime() - date1.getTime();
-// const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
-// console.log('Days between:', diffInDays);
+// 12. Date difference (in days)
+const diffInMs = date2.getTime() - date1.getTime();
+const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
+console.log('Days between:', diffInDays);
 
-// // 13. Add days to a date
-// const futureDate = new Date();
-// futureDate.setDate(futureDate.getDate() + 10); // Add 10 days
-// console.log('10 Days Later:', futureDate);
+// 13. Add days to a date
+const futureDate = new Date();
+futureDate.setDate(futureDate.getDate() + 10); // Add 10 days
+console.log('10 Days Later:', futureDate);
 
-// // 14. Handle UTC vs Local
-// console.log('Local Hour:', now.getHours());
-// console.log('UTC Hour:', now.getUTCHours());
+// 14. Handle UTC vs Local
+console.log('Local Hour:', now.getHours());
+console.log('UTC Hour:', now.getUTCHours());
 
-// // 15. Get timezone offset (in minutes)
-// console.log('Timezone Offset (minutes from UTC):', now.getTimezoneOffset());
+// 15. Get timezone offset (in minutes)
+console.log('Timezone Offset (minutes from UTC):', now.getTimezoneOffset());
